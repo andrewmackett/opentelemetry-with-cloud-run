@@ -4,7 +4,11 @@ Simple Flask app to demonstrate an issue with using OpenTelemetry in Google Clou
 
 ## Rational
 
-One thing about OpenTelemetry that is appealling is that you can instrument your application code to produce trace data, and change the OpenTelemetry exporter to send the data to any vendor that supports OpenTelemetry. However when testing vendors that support OpenTelemetry with the application running in Google Cloud Run there appears to be some of the trace data missing.
+One thing about OpenTelemetry that is appealing is that you can instrument your application code to produce trace data, and change the OpenTelemetry exporter to send the data to any vendor that supports OpenTelemetry. However when testing vendors that support OpenTelemetry with the application running in Google Cloud Run there appears to be some of the trace data missing.
+
+Below are steps to create a sample application that can be deployed to Cloud Run (twice) to demonstrate that OpenTelemetry instrumentation works with Cloud Trace, but not with other vendors.
+
+![Test Architecture](docs/test-architecture.png)
 
 ## Steps To Use Cloud Trace
 
